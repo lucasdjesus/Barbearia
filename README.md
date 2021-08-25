@@ -1,0 +1,1 @@
+Um básico site de barbearia para colocar o aprendizado em prática.
