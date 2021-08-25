@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html> <!--Todo o conteudo de codigo deve estar aqui dentro dessa tag-->
+	<head><!-- Head é o que o documento vai informar para os navegadores-->
+	<meta charset="utf-8"> <!--É o que esta sendo utilizado por todos, tipo uma linguagem atual de caracter-->
+	<title>Contato - Barbearia Alura</title> <!--Titulo da pagina-->
+	<link rel="stylesheet" href="reset.css"> <!-- Reset é um arquivo que limpa toda a estrutura do CSS criada pelo navegador-->
+	<link rel="stylesheet" href="style.css"> <!-- Essa tag chama um arquivo css-->
+
+</head>
+
+<body>
+	<header> <!--Cabeçalho-->
+			<div class="caixa">
+			<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1> <!--Alt é um alternativo, para acessibilidade-->
+		
+			<nav>
+			<ul>
+			<li><a href="index.html">Home</a></li>     <!--Ancora é chamada com a tag link "a". Pega uma pagina para linkar em outra pagina-->
+			<li><a href="produtos.html">Produto</a></li>
+			<li><a href="contato.html">Contato</a></li>
+			</ul>
+
+			</nav>                <!-- Nav de navegação-->
+			</div>
+	</header>
+
+	<main>
+		<form> <!--tag do formulário-->
+		<label for="nomesobrenome">Nome e sobrenome</label>	 
+		<input type="text" id="nomesobrenome" class="input-padrao"required>                       <!-- Label (é uma etiqueta) e input sempre andam juntos-->
+
+		<label for="email">Email</label>
+		<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+									<!--Required é um campo obrigatorio-->  <!--Placeholder é a sugestão que aparece no campo-->
+		<label for="telefone">Telefone</label>
+		<input type="tel" id="telefone" class="input-padrao"required placeholder="(XX)XXXXX-XXXX">
+
+		<label for="Mensagem">Mensagem</label>
+		<textarea cols="30" rows="10" id="Mensagem" class="input-padrao"required> </textarea>  <!-- para que a quantidade de colunas seja 30 e de linhas seja 10-->
+
+
+		<!-- Quando se trata de um preenchimento de informações, ao invez de usar a tag "DIV", deve ser usado a tag "Fielset" para melhor semantica do codigo. Em vez de usar a tag "<P>" deve ser usado "Legend"-->
+	<fieldset>
+		<legend>Como prefere o nosso contato?</legend>
+		<label for="radio email"> <input type="radio" name="contato" value="email" id="radio email">Email</label>
+		
+
+		<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+		
+
+		<label for="radio-whatsapp"><input type="radio"name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+		
+
+			<!-- a proprieda "name", faz com que ao habilitar um botao, o outro seja desabilitado-->
+
+		<input type="submit" value="Enviar formulario" class="enviar">
+	</div>	
+	<fieldset>
+	<legend>Qual horário prefere ser atendido?</legend>		
+	 <select>      <!--Cria um campo para o usuário selecionar as opções-->
+	 	<option>Manhã</option>
+	 	<option>Tarde</option>
+	 	<option>Noite</option>
+
+	 </select>
+	</fieldset>		
+			<label class="checkbox"><input type="Checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+
+			</form>
+	<table>  <!--Para inserir informações com formas de tabelas, a estrutura é dessa maneira. Tag "Td" são as linhas-->
+		<thead>  <!--Cabeçalho da tabela-->
+			<tr>
+   		 <td colspan="5" class="cidade">São Paulo</td> 
+		</tr>
+		<th>Dia</th>
+		<th>Horário</th>
+		</thead>
+
+		<tbody>  <!--É o corpo da tabela-->
+			
+			<tr>
+			<td>Segunda</td>
+			<td>8h ~ 20h</td>
+			</tr>
+			<tr>
+			<td>Quarta</td>
+			<td>8h ~ 20h</td>
+			</tr>
+			<tr>
+			<td>Sexta</td>
+			<td>8h ~ 20h</td>		
+
+			</tr>
+		</tbody>
+
+
+	</table>
+
+
+		</main>
+	<footer>              <!--esse cara chama o Rodapé-->
+		<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+		<p class="copyright">&copy Copyright Barbearia Alura 2019</p>
+
+
+	</footer>
+
+
+
+	<!--ACESSAR O SITE MOBILE INPUT TYPES-->
